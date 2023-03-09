@@ -357,7 +357,6 @@ def nep_db_minimizer(tabname,Q_E,core_sizes,partition_dict,i):
         else:
             return Q_E
 
-
 def nep_db_minimizer1(tabname,Q_E,core_sizes,partition_dict,i): 
     #Run the hidden query on this updated database instance with table T_u
     print("HELLO",core_sizes)

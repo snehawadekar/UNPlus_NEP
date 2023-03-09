@@ -23,6 +23,8 @@ for i in range(len(Queries)):
     cur = reveal_globals.global_conn.cursor()
     start_time = time.time() 
     cur.execute(Queries[i])
+    res = cur.fetchall()
+    print("lenght of result-----", len(res))
     t = time.time() - start_time
     cur.close()
     print(Queries[i] )
